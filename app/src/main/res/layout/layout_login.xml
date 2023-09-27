@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800px"
+    android:layout_height="wrap_content"
+    android:background="#A39365"
+    android:orientation="vertical"
+    android:padding="30px">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập mật khẩu"
+        android:textAlignment="center"
+        android:textColor="#00000"
+        android:textSize="16px"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtnewPass"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:textColor="#00000"
+        android:password="true"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
