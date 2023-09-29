@@ -22,7 +22,6 @@
         android:layout_width="match_parent"
         android:textSize="18sp"
         android:textColor="#000000"
-        android:password="true"
         tools:ignore="MissingConstraints" />
     <TextView
         android:layout_width="match_parent"
