@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity
     private int curentMonth = 0;
     private int curentDay = 0;
 
-    private int daysIndex = 0;
+    private int index = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +31,11 @@ public class MainActivity extends AppCompatActivity
 
 
         final List<String> calendarStrings = new ArrayList<>();
-        int[] days = new int[30];
+        final int numberOfDays = 2000;
+        final int[] days = new int[numberOfDays];
+        final int[] months = new int[numberOfDays];
+        final int[] years = new int[numberOfDays];
+
         final EditText textInput = findViewById(R.id.textInput);
 
         final View dayContent = findViewById(R.id.dayContent);
@@ -51,8 +55,12 @@ public class MainActivity extends AppCompatActivity
 
                 for (int i = 0; i<30; i++){
                     if (days[i]==curentDay) {
-                        textInput.setText(calendarStrings.get(i));
-                        return;
+                        for (int j =0;i<12; i++){
+                            if (months[j]==curentMonth){
+                                textInput.setText(calendarStrings.get(i));
+                                return;
+                            }
+                        }
                     }
                 }
                 textInput.setText("");
@@ -64,9 +72,11 @@ public class MainActivity extends AppCompatActivity
         saveTextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                days[daysIndex] = curentDay;
-                calendarStrings.add(daysIndex,textInput.getText().toString());
-                daysIndex++;
+                days[index] = curentDay;
+                months[index] = curentMonth;
+                years[index] = curentYear;
+                index++;
+                calendarStrings.add(index,textInput.getText().toString());
                 textInput.setText("");
             }
         });
