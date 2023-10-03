@@ -18,30 +18,44 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity
 {
+    private int curentYear = 0;
+    private int curentMonth = 0;
+    private int curentDay = 0;
+
+    private int daysIndex = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         CalendarView calendarView = findViewById(R.id.calendarView);
-        final TextView selectedDay = findViewById(R.id.selectedDay);
-        final TextView selectedMonth = findViewById(R.id.selectedMonth);
-        final TextView selectedYear = findViewById(R.id.selectedYear);
 
 
         final List<String> calendarStrings = new ArrayList<>();
+        int[] days = new int[30];
         final EditText textInput = findViewById(R.id.textInput);
+
+        final View dayContent = findViewById(R.id.dayContent);
+
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int year, int month, int dayOfMonth)
             {
-                selectedDay.setText("Selcted Day:" +dayOfMonth);
-                selectedMonth.setText("Selcted Month:" + month);
-                selectedYear.setText("Selcted Year:" + year);
-                long saveDate = Long.parseLong(calendarStrings.get(0));
-                if (calendarView.getDate() == saveDate)
-                {
-                    textInput.setText(calendarStrings.get(1));
+                curentYear = year;
+                curentMonth = month;
+                curentDay = dayOfMonth;
+                if (dayContent.getVisibility() == View.GONE){
+                    dayContent.setVisibility(View.VISIBLE);
                 }
+
+
+
+                for (int i = 0; i<30; i++){
+                    if (days[i]==curentDay) {
+                        textInput.setText(calendarStrings.get(i));
+                        return;
+                    }
+                }
+                textInput.setText("");
             }
         });
 
@@ -50,8 +64,9 @@ public class MainActivity extends AppCompatActivity
         saveTextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                calendarStrings.add(String.valueOf(calendarView.getDate()));
-                calendarStrings.add(textInput.getText().toString());
+                days[daysIndex] = curentDay;
+                calendarStrings.add(daysIndex,textInput.getText().toString());
+                daysIndex++;
                 textInput.setText("");
             }
         });
