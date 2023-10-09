@@ -8,6 +8,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/todayButton"
+        android:text="today"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        />
+
     <CalendarView
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
