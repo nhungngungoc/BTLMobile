@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800px"
+    android:layout_height="wrap_content"
+    android:background="#A39365"
+    android:orientation="vertical"
+    android:padding="30px"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập mật khẩu"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16px"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txtnewPass"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nhập lại mật khẩu"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/txtRetype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:password="true"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Câu hỏi số 1"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints" />
+    <Spinner
+        android:id="@+id/spnQuestion1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/txtQuestion1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Câu hỏi số 2"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints" />
+    <Spinner
+        android:id="@+id/spnQuestion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/txtQuestion2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Câu hỏi số 3"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:ignore="MissingConstraints" />
+    <Spinner
+        android:id="@+id/spnQuestion3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/txtQuestion3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        tools:ignore="MissingConstraints" />
+    <Button
+        tools:ignore="MissingConstraints"
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="OK"
+        android:background="@drawable/rounded_corner"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
