@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="800px"
+    android:layout_height="wrap_content"
+    android:background="#A39365"
+    android:padding="30px"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSelDate"
+        android:text="Chọn ngày"
+        android:background="@drawable/corner"
+        android:textColor="@android:color/black"
+        android:padding="30px"/>
+
+    <EditText
+        android:layout_width="450px"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSelDate"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/btnSelDate"
+        android:layout_marginLeft="50px"/>
+    <Button
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSelTime"
+        android:text="Chọn giờ"
+        android:layout_marginTop="30px"
+        android:background="@drawable/corner"
+        android:textColor="@android:color/black"
+        android:padding="30px"/>
+    <EditText
+        android:layout_width="450px"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSeltime"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/btnSelDate"
+        android:layout_below="@id/txtSelTime"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="50px"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_graity="center_horizontal"
+        android:fontFamily="@font/arima_madurai_extrabold"
+        android:text="Nội dung"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="30px"
+        android:id="@+id/tvContent"
+        android:layout_below="@id/txtSelTime"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/droid_serif_bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:singleLine="false"
+        android:id="@+id/txtContent"
+        android:layout_below="@id/tvContent"
+       />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tbtnOK"
+        android:text="Ok"
+        android:layout_marginTop="30px"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_corner"
+        android:layout_below="@+id/txtContent"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+</RelativeLayout>
