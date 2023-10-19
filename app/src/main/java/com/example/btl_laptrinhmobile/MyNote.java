@@ -1,4 +1,4 @@
-package com.example.btl_laptrinhmobile.Calendar_Note;
+package com.example.btl_laptrinhmobile;
 
 import android.app.Dialog;
 import android.content.Intent;

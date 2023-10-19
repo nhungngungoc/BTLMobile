@@ -1,4 +1,4 @@
-package com.example.btl_laptrinhmobile.Calendar_Note;
+package com.example.btl_laptrinhmobile;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
+
+import com.example.btl_laptrinhmobile.MyAccount;
 
 public class LoginDatabase extends SQLiteOpenHelper
 {

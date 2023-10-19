@@ -1,4 +1,4 @@
-package com.example.btl_laptrinhmobile.Calendar_Alarm;
+package com.example.btl_laptrinhmobile;
 
 public class WorkAlarm
 {

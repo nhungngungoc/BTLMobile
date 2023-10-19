@@ -1,4 +1,4 @@
-package com.example.btl_laptrinhmobile.Calendar_Note;
+package com.example.btl_laptrinhmobile;
 
 public class MyAccount
 {

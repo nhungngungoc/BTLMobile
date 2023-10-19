@@ -1,4 +1,4 @@
-package com.example.btl_laptrinhmobile.Calendar_ToDay;
+package com.example.btl_laptrinhmobile;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

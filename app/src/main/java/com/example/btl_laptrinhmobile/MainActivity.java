@@ -8,12 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.animation.Animation;
 
-import com.example.btl_laptrinhmobile.Calendar_Alarm.Setting;
-import com.example.btl_laptrinhmobile.Calendar_Note.MyNote;
-import com.example.btl_laptrinhmobile.Calendar_ToDay.MyCarlendar;
-import com.example.btl_laptrinhmobile.Calendar_Total.TotalCalendar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity
