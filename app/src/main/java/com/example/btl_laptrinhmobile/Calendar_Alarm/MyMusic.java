@@ -1,4 +1,4 @@
-package com.example.btl_laptrinhmobile;
+package com.example.btl_laptrinhmobile.Calendar_Alarm;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -13,7 +13,6 @@ import android.os.IBinder;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
-import com.example.btl_laptrinhmobile.WorkAlarm;
 import com.example.procalendar.MyDataBase;
 import com.example.procalendar.R;
 

@@ -1,4 +1,4 @@
-package com.example.btl_laptrinhmobile;
+package com.example.btl_laptrinhmobile.Calendar_Alarm;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

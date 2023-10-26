@@ -28,7 +28,7 @@
         android:text="Tháng
 "
         android:textAlignment="center"
-        android:textColor="#960808"
+        android:textColor="#FF5722"
         android:textSize="28sp"
         android:textStyle="bold"
         app:fontFamily="@font/arima_madurai_extrabold" />
@@ -39,9 +39,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80px"
         android:fontFamily="cursive"
-        android:text="0"
+        android:text="10"
         android:textAlignment="center"
-        android:textColor="#48547C"
+        android:textColor="#9C27B0"
         android:textSize="150sp"
         android:textStyle="bold"
         app:fontFamily="@font/droid_serif_bold" />
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80px"
         android:background="#5294CA"
-        android:text="0"
+        android:text="04"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="28sp"
@@ -64,9 +64,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30px"
-        android:text="0"
+        android:text="00"
         android:textAlignment="center"
-        android:textColor="#B84E2D"
+        android:textColor="#009688"
         android:textSize="22sp"
         android:textStyle="bold"
         app:fontFamily="@font/arima_madurai_extrabold" />
@@ -79,9 +79,9 @@
         android:layout_marginTop="30px"
         android:fontFamily="cursive"
         android:padding="20px"
-        android:text="0"
+        android:text="12"
         android:textAlignment="center"
-        android:textColor="#CA2059"
+        android:textColor="#F44336"
         android:textSize="75sp"
         android:textStyle="bold"
         app:fontFamily="@font/droid_serif_bold" />
